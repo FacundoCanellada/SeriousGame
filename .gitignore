@@ -1,0 +1,178 @@
+# ====================================================
+# ✅ UNITY PROJECT .GITIGNORE (2025)
+# ====================================================
+
+# --- Core Unity folders ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+MemoryCaptures/
+UserSettings/
+
+# --- Asset Pipeline cache ---
+/Assets/AssetStoreTools*
+/Assets/StreamingAssets/aa/*
+!Assets/StreamingAssets/aa/keep.txt
+
+# --- Cache and generated data ---
+sysinfo.txt
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.bak
+*.tmp
+*.orig
+*.log
+*.diff
+*.idb
+*.suo
+*.user
+*.userprefs
+*.csproj
+*.unityproj
+*.sln
+*.dotSettings
+*.userprefs
+*.vcxproj
+*.vcxproj.*
+*.pidb.meta
+*.bak.meta
+*.tmp.meta
+*.pdb.meta
+
+# --- Addressables cache ---
+/ServerData/
+/Library/com.unity.addressables/
+/Assets/AddressableAssetsData/Windows/
+/Assets/AddressableAssetsData/iOS/
+/Assets/AddressableAssetsData/Android/
+/Assets/AddressableAssetsData/StandaloneOSX/
+/Assets/AddressableAssetsData/StandaloneWindows64/
+
+# --- Scene data backups ---
+/*.unity.backup
+
+# --- Rider / VS / VSCode ---
+.idea/
+.vscode/
+*.code-workspace
+.vs/
+*.sln.DotSettings.user
+*.csproj.user
+*.sln.iml
+
+# --- JetBrains Rider cache ---
+/.idea/
+/*.sln.iml
+
+# --- Auto-generated Unity build reports ---
+/BuildReport.xml
+/BuildReportFiles/
+
+# --- Plastic SCM ---
+/PlasticSCM/
+*.plastic
+*.plastic.meta
+
+# --- Unity Cloud Build ---
+/UnityCloud/
+unitycloud/
+.collabignore
+/.collabignore
+/ProjectSettings/EditorBuildSettings.asset.bak
+
+# --- Crash and profiler files ---
+sysinfo.txt
+*.stacktrace
+*.dmp
+*.crash
+
+# --- Lightmap / GI Cache ---
+/LightmapSnapshot
+/LightingData.asset
+/LightingData.meta
+/[Ll]ightmap*/
+*/GIcache/
+
+# --- Android / iOS specific ---
+/*.apk
+/*.aab
+/*.obb
+*.apk.meta
+*.aab.meta
+*.obb.meta
+*.ipa
+*.xcworkspace
+*.xcuserdata/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+Pods/
+DerivedData/
+
+# --- Addressables build cache ---
+/Library/com.unity.addressables/
+# (optional) keep config files:
+!Assets/AddressableAssetsData/addressables_content_state.bin
+!Assets/AddressableAssetsData/link.xml
+
+# --- Gradle / Android Studio ---
+.gradle/
+**/gradle-wrapper.jar
+**/gradle-wrapper.properties
+local.properties
+*.keystore
+*.jks
+*.gradle
+*.iml
+/.idea/
+
+# --- Logs and Reports ---
+/Logs/
+/CrashReports/
+/BugReports/
+
+# --- VSCode plugin stuff ---
+.vscode/
+.history/
+
+# --- Packages Cache ---
+/Packages/com.unity.package-manager*
+/Packages/packages-lock.json.bak
+/Packages/manifest.json.bak
+
+# --- Yarn / Node / NPM for webGL tools ---
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+dist/
+out/
+
+# --- Unity Cloud Diagnostics ---
+/ProjectSettings/UnityConnectSettings.asset
+
+# --- TextMeshPro generated data ---
+/Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+/Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+
+# --- Optional: Keep Source Control files ---
+!Assets/**/*.meta
+!ProjectSettings/**/*.asset
+!Packages/manifest.json
+!Packages/packages-lock.json
+
+# --- Custom keepers ---
+# Puedes crear archivos vacíos llamados keep.txt para mantener carpetas vacías
+# Ejemplo:
+# /Assets/StreamingAssets/keep.txt
+
+# ====================================================
+# END OF FILE
+# ====================================================
