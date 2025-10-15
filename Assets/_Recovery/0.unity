@@ -327,66 +327,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &223378136
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 223378138}
-  - component: {fileID: 223378137}
-  m_Layer: 0
-  m_Name: AvatarManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &223378137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223378136}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9ec7be945ab63a4ca5b3a60ad405d8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AvatarManager
-  availableAvatars:
-  - avatarId: 1
-    avatarName: Mujer
-    avatarSprite: {fileID: -8411566406335392688, guid: a6f20c890dc4bb44b89abbf99615fff5, type: 3}
-    avatarIcon: {fileID: -8411566406335392688, guid: a6f20c890dc4bb44b89abbf99615fff5, type: 3}
-    description: 
-    primaryArea: 0
-    secondaryArea: 0
-  - avatarId: 2
-    avatarName: Hombre
-    avatarSprite: {fileID: 8496549310259108057, guid: 0f4ba106987578146966f4ab774c32b7, type: 3}
-    avatarIcon: {fileID: 8496549310259108057, guid: 0f4ba106987578146966f4ab774c32b7, type: 3}
-    description: 
-    primaryArea: 0
-    secondaryArea: 0
-  debugMode: 0
---- !u!4 &223378138
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 223378136}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 419.12668, y: 1578.9384, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &318155332
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,7 +836,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlaySoundAndLoadScene
   clickSound: {fileID: 8300000, guid: db2692f4a29343546907d6f456e91ef2, type: 3}
   audioSource: {fileID: 133340042}
-  sceneNameToLoad: Menu
+  sceneNameToLoad: Tablero
 --- !u!114 &1040657524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -904,7 +844,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1040657518}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c84dc2991a96cc74c8aa5645df68cd95, type: 3}
   m_Name: 
@@ -1300,10 +1240,6 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 133340042}
-    - target: {fileID: 5483075821505848139, guid: bbc2bbe5791c4514a8fab1d950e7cf2f, type: 3}
-      propertyPath: sceneNameToLoad
-      value: AvatarSelection
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1320,4 +1256,3 @@ SceneRoots:
   - {fileID: 2999713049199618841}
   - {fileID: 2052054057}
   - {fileID: 1740628808}
-  - {fileID: 223378138}

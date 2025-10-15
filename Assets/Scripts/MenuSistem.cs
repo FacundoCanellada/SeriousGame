@@ -3,9 +3,37 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneButton : MonoBehaviour
 {
-    // Este m閠odo se puede llamar desde el bot髇
+    [Header("Configuraci贸n de Navegaci贸n")]
+    public bool checkRegistration = true;
+    public string registrationSceneName = "RegistroScene";
+    public string avatarSelectionSceneName = "AvatarSelection";
+    
+    // Este m茅todo se puede llamar desde el bot贸n
     public void LoadSceneByName(string sceneName)
     {
         SceneManager.LoadScene(sceneName);
+    }
+    
+    // Nuevo m茅todo para el bot贸n Play que verifica el registro
+    public void OnPlayButtonClick()
+    {
+        if (checkRegistration && UserDataManager.Instance != null)
+        {
+            if (!UserDataManager.Instance.HasUserRegistered())
+            {
+                // Si no est谩 registrado, ir a registro
+                SceneManager.LoadScene(registrationSceneName);
+            }
+            else
+            {
+                // Si ya est谩 registrado, ir directo a selecci贸n de avatar
+                SceneManager.LoadScene(avatarSelectionSceneName);
+            }
+        }
+        else
+        {
+            // Si no hay verificaci贸n, ir directo al tablero
+            SceneManager.LoadScene("Tablero");
+        }
     }
 }
