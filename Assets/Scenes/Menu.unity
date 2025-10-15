@@ -358,16 +358,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AvatarManager
   availableAvatars:
   - avatarId: 1
-    avatarName: Mujer
-    avatarSprite: {fileID: -8411566406335392688, guid: a6f20c890dc4bb44b89abbf99615fff5, type: 3}
-    avatarIcon: {fileID: -8411566406335392688, guid: a6f20c890dc4bb44b89abbf99615fff5, type: 3}
+    avatarName: Hombre 1
+    avatarSprite: {fileID: 5247300169413169334, guid: 32430da078dd46f479b0c4a09103dedb, type: 3}
+    avatarIcon: {fileID: 5247300169413169334, guid: 32430da078dd46f479b0c4a09103dedb, type: 3}
     description: 
     primaryArea: 0
     secondaryArea: 0
   - avatarId: 2
-    avatarName: Hombre
-    avatarSprite: {fileID: 8496549310259108057, guid: 0f4ba106987578146966f4ab774c32b7, type: 3}
-    avatarIcon: {fileID: 8496549310259108057, guid: 0f4ba106987578146966f4ab774c32b7, type: 3}
+    avatarName: Mujer 1
+    avatarSprite: {fileID: -2153640095868015310, guid: 0466b737077f5b74cbb396bfd19e5f5f, type: 3}
+    avatarIcon: {fileID: -2153640095868015310, guid: 0466b737077f5b74cbb396bfd19e5f5f, type: 3}
+    description: 
+    primaryArea: 0
+    secondaryArea: 0
+  - avatarId: 3
+    avatarName: Mujer 2
+    avatarSprite: {fileID: 7261025177355161920, guid: 3f5c6dd3a90dfcf42ab35619de629279, type: 3}
+    avatarIcon: {fileID: 7261025177355161920, guid: 3f5c6dd3a90dfcf42ab35619de629279, type: 3}
+    description: 
+    primaryArea: 0
+    secondaryArea: 0
+  - avatarId: 4
+    avatarName: Hombre 2
+    avatarSprite: {fileID: 5127237277215567763, guid: 290d0055a423a00498fbdb18914c389c, type: 3}
+    avatarIcon: {fileID: 5127237277215567763, guid: 290d0055a423a00498fbdb18914c389c, type: 3}
     description: 
     primaryArea: 0
     secondaryArea: 0
