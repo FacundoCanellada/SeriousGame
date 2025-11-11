@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4771360168968644425}
   - component: {fileID: 6488213701251518428}
   - component: {fileID: 7273310618115233024}
+  - component: {fileID: -1742602987787723341}
   m_Layer: 0
   m_Name: enemigo mosca
   m_TagString: Untagged
@@ -167,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35c13b9f1be47bd419ae55dc838c9f97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  health: 100
+  health: 20
 --- !u!50 &7273310618115233024
 Rigidbody2D:
   serializedVersion: 5
@@ -195,3 +196,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-1742602987787723341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3931925089799354906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d623b97a1e41f374581ba1e20c5c10dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClickToDamageEnemy
+  timeToAttack: 1
+  Everything:
+    serializedVersion: 2
+    m_Bits: 0
+  attackDamage: 10
