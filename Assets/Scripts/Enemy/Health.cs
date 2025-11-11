@@ -75,7 +75,7 @@ public class Health : MonoBehaviour
         Debug.Log("I am Dead!");
         Destroy(gameObject);
 
-        if (this.CompareTag("Player"))
+        if (this.CompareTag("Planta"))
         {
             Time.timeScale = 0;
             OnPlayerDeath?.Invoke();

@@ -12,12 +12,12 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     private EnemyData data;
 
-    private GameObject planta;
+    private GameObject Planta;
 
     // Start is called before the first frame update
     void Start()
     {
-        planta = GameObject.FindGameObjectWithTag("Planta");
+        Planta = GameObject.FindGameObjectWithTag("Planta");
         SetEnemyValues();
     }
 
@@ -36,15 +36,15 @@ public class Enemy : MonoBehaviour
 
     private void Swarm()
     {
-        if(planta != null)
+        if(Planta != null)
         {
-            transform.position = Vector2.MoveTowards(transform.position, planta.transform.position, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, Planta.transform.position, speed * Time.deltaTime);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.CompareTag("Player"))
+        if (collider.CompareTag("Planta"))
         {
             if(collider.GetComponent<Health>() != null)
             {
