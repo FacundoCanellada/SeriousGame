@@ -6,6 +6,7 @@ public class SpinWheelFixedTarget : MonoBehaviour
     [SerializeField] private float maxSpinSpeed = 1000f;
     [SerializeField] private float deceleration = 300f;
     [SerializeField] private float targetAngle = 90f; // Ángulo donde está la planta
+    [SerializeField] private AudioSource audioSource; // 🔊 arrastrá tu AudioSource acá
 
     private bool isSpinning = false;
     private float currentSpeed;
@@ -22,9 +23,14 @@ public class SpinWheelFixedTarget : MonoBehaviour
             // Desacelera gradualmente
             currentSpeed -= deceleration * Time.deltaTime;
 
+            // Si el sonido no está reproduciéndose, lo arrancamos
+            if (!audioSource.isPlaying)
+                audioSource.Play();
+
             if (currentSpeed <= 0)
             {
                 isSpinning = false;
+                audioSource.Stop(); // 🔇 detiene el sonido cuando se frena
 
                 // Ajusta el ángulo final para que termine en la planta
                 Vector3 finalRotation = transform.eulerAngles;
