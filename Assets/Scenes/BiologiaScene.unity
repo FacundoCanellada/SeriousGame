@@ -269,8 +269,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MoscasSpawner
   moscaPrefab: {fileID: 3931925089799354906, guid: a7a820a7cdd0b0643a8653f656d78868, type: 3}
-  moscaGrandePrefab: {fileID: 0}
-  moscaInterval: 3.5
+  moscaGrandePrefab: {fileID: 3931925089799354906, guid: a7a820a7cdd0b0643a8653f656d78868, type: 3}
+  moscaInterval: 4
   moscaGrandeInterval: 10
 --- !u!4 &41517627
 Transform:
@@ -1857,7 +1857,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35c13b9f1be47bd419ae55dc838c9f97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  health: 100
+  health: 50
 --- !u!61 &857367666
 BoxCollider2D:
   m_ObjectHideFlags: 0
