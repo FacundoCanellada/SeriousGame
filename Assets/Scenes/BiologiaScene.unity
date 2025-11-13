@@ -1721,6 +1721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   health: 50
+  gameOverPanel: {fileID: 1250147889}
 --- !u!61 &857367666
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2516,6 +2517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
   health: 100
+  gameOverPanel: {fileID: 0}
 --- !u!1 &1453169563
 GameObject:
   m_ObjectHideFlags: 0

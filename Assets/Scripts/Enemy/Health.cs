@@ -6,6 +6,7 @@ using System;
 public class Health : MonoBehaviour
 {
     [SerializeField] private int health = 100;
+    [SerializeField] private GameObject gameOverPanel;
 
     private int MAX_HEALTH = 100;
 
@@ -69,20 +70,27 @@ public class Health : MonoBehaviour
             this.health += amount;
         }
     }
-
     private void Die()
     {
         Debug.Log("I am Dead!");
-        Destroy(gameObject);
-
+    
         if (this.CompareTag("Planta"))
         {
-            Time.timeScale = 0;
+            // Mostrar el panel de Game Over
+            if (gameOverPanel != null)
+            {
+                gameOverPanel.SetActive(true);
+            }
+
+            Time.timeScale = 0; // opcional, pausa el juego
             OnPlayerDeath?.Invoke();
         }
         else
         {
             OnEnemyDeath?.Invoke();
         }
+
+        Destroy(gameObject);
     }
+    
 }
